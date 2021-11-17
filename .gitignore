@@ -5,3 +5,4 @@ local.properties
 /build
 dagger-compiler-shadow/build
 dagger-library-shadow/build
+build.bat
