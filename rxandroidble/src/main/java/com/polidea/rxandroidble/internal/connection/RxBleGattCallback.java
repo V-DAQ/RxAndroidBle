@@ -209,8 +209,7 @@ public class RxBleGattCallback {
             nativeCallbackDispatcher.notifyNativePhyUpdateCallback(gatt, txPhy, rxPhy, status);
             super.onPhyUpdate(gatt, txPhy, rxPhy, status);
 
-            if (phyUpdateOutput.hasObservers()
-                    && !propagateErrorIfOccurred(phyUpdateOutput, gatt, status, BleGattOperationType.ON_PHY_UPDATE)) {
+            if (phyUpdateOutput.hasObservers()) {
                 phyUpdateOutput.valueRelay.call(txPhy);
             }
         }
