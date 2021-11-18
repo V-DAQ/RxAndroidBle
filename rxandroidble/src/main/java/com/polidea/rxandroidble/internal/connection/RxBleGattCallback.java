@@ -45,6 +45,7 @@ public class RxBleGattCallback {
     private final Output<ByteAssociation<BluetoothGattDescriptor>> writeDescriptorOutput = new Output<>();
     private final Output<Integer> readRssiOutput = new Output<>();
     private final Output<Integer> changedMtuOutput = new Output<>();
+    private final Output<Integer> phyUpdateOutput = new Output<>();
     private final Func1<BleGattException, Observable<?>> errorMapper = new Func1<BleGattException, Observable<?>>() {
         @Override
         public Observable<?> call(BleGattException bleGattException) {
@@ -201,6 +202,18 @@ public class RxBleGattCallback {
                 changedMtuOutput.valueRelay.call(mtu);
             }
         }
+
+        @Override
+        public void onPhyUpdate(BluetoothGatt gatt, int txPhy, int rxPhy, int status) {
+            RxBleLog.d("onPhyUpdate txPhy=%d rxPhy=%d status=%d", txPhy, rxPhy, status);
+            nativeCallbackDispatcher.notifyNativePhyUpdateCallback(gatt, txPhy, rxPhy, status);
+            super.onPhyUpdate(gatt, txPhy, rxPhy, status);
+
+            if (phyUpdateOutput.hasObservers()
+                    && !propagateErrorIfOccurred(phyUpdateOutput, gatt, status, BleGattOperationType.ON_PHY_UPDATE)) {
+                phyUpdateOutput.valueRelay.call(txPhy);
+            }
+        }
     };
 
     private RxBleConnectionState mapConnectionStateToRxBleConnectionStatus(int newState) {
@@ -297,6 +310,10 @@ public class RxBleGattCallback {
 
     public Observable<Integer> getOnMtuChanged() {
         return withDisconnectionHandling(changedMtuOutput).observeOn(callbackScheduler);
+    }
+
+    public Observable<Integer> getOnPhyUpdate() {
+        return withDisconnectionHandling(phyUpdateOutput).observeOn(callbackScheduler);
     }
 
     public Observable<ByteAssociation<UUID>> getOnCharacteristicRead() {
