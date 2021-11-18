@@ -26,6 +26,12 @@ public class ScanSettings implements Parcelable {
 
     }
 
+    @IntDef({PHY_LE_1M, PHY_LE_CODED, PHY_LE_ALL_SUPPORTED})
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface PhyMode {
+
+    }
+
     @IntDef(value = {CALLBACK_TYPE_ALL_MATCHES, CALLBACK_TYPE_FIRST_MATCH, CALLBACK_TYPE_MATCH_LOST}, flag = true)
     @Retention(RetentionPolicy.SOURCE)
     public @interface CallbackType {
@@ -67,6 +73,10 @@ public class ScanSettings implements Parcelable {
      * running in the foreground.
      */
     public static final int SCAN_MODE_LOW_LATENCY = 2;
+
+    public static final int PHY_LE_1M = 1;
+    public static final int PHY_LE_CODED = 3;
+    public static final int PHY_LE_ALL_SUPPORTED = 255;
 
     /**
      * Trigger a callback for every Bluetooth advertisement found that matches the filter criteria.
@@ -124,6 +134,10 @@ public class ScanSettings implements Parcelable {
     @ScanMode
     private int mScanMode;
 
+    // Bluetooth LE phy mode.
+    @PhyMode
+    private int mPhyMode;
+
     // Bluetooth LE scan callback type
     @CallbackType
     private int mCallbackType;
@@ -140,6 +154,11 @@ public class ScanSettings implements Parcelable {
     @ScanMode
     public int getScanMode() {
         return mScanMode;
+    }
+
+    @PhyMode
+    public int getPhyMode() {
+        return mPhyMode;
     }
 
     @CallbackType
@@ -165,12 +184,13 @@ public class ScanSettings implements Parcelable {
     }
 
     private ScanSettings(int scanMode, int callbackType,
-                         long reportDelayMillis, int matchMode, int numOfMatchesPerFilter) {
+                         long reportDelayMillis, int matchMode, int numOfMatchesPerFilter, int phyMode) {
         mScanMode = scanMode;
         mCallbackType = callbackType;
         mReportDelayMillis = reportDelayMillis;
         mNumOfMatchesPerFilter = numOfMatchesPerFilter;
         mMatchMode = matchMode;
+        mPhyMode = phyMode;
     }
 
     private ScanSettings(Parcel in) {
@@ -183,6 +203,8 @@ public class ScanSettings implements Parcelable {
         mMatchMode = in.readInt();
         //noinspection WrongConstant
         mNumOfMatchesPerFilter = in.readInt();
+        //noinspection WrongConstant
+        mPhyMode = in.readInt();
     }
 
     @Override
@@ -192,6 +214,7 @@ public class ScanSettings implements Parcelable {
         dest.writeLong(mReportDelayMillis);
         dest.writeInt(mMatchMode);
         dest.writeInt(mNumOfMatchesPerFilter);
+        dest.writeInt(mPhyMode);
     }
 
     @Override
@@ -222,6 +245,7 @@ public class ScanSettings implements Parcelable {
         private long mReportDelayMillis = 0;
         private int mMatchMode = MATCH_MODE_AGGRESSIVE;
         private int mNumOfMatchesPerFilter = MATCH_NUM_MAX_ADVERTISEMENT;
+        private int mPhyMode = PHY_LE_1M;
 
         /**
          * Set scan mode for Bluetooth LE scan.
@@ -236,6 +260,20 @@ public class ScanSettings implements Parcelable {
                 throw new IllegalArgumentException("invalid scan mode " + scanMode);
             }
             mScanMode = scanMode;
+            return this;
+        }
+
+        /**
+         * Set phy mode for Bluetooth LE scan.
+         *
+         * @param phy The phy mode can be one 1M, coded PHY or all supported
+         * @throws IllegalArgumentException If the {@code phy} is invalid.
+         */
+        public ScanSettings.Builder setPhy(@PhyMode int phy) {
+            if (phy < PHY_LE_1M || phy > PHY_LE_ALL_SUPPORTED) {
+                throw new IllegalArgumentException("invalid phy mode " + phy);
+            }
+            mPhyMode = phy;
             return this;
         }
 
@@ -321,7 +359,7 @@ public class ScanSettings implements Parcelable {
          */
         public ScanSettings build() {
             return new ScanSettings(mScanMode, mCallbackType,
-                    mReportDelayMillis, mMatchMode, mNumOfMatchesPerFilter);
+                    mReportDelayMillis, mMatchMode, mNumOfMatchesPerFilter, mPhyMode);
         }
     }
 }
