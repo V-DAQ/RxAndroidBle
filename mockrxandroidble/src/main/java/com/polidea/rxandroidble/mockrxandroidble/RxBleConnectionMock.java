@@ -86,6 +86,16 @@ public class RxBleConnectionMock implements RxBleConnection {
     }
 
     @Override
+    public Observable<Integer> setPreferredPhy(final int txPhy, final int rxPhy, final int phyOptions) {
+        return Observable.fromCallable(new Callable<Integer>() {
+            @Override
+            public Integer call() throws Exception {
+                return txPhy;
+            }
+        });
+    }
+
+    @Override
     public Observable<RxBleDeviceServices> discoverServices() {
         return Observable.just(rxBleDeviceServices);
     }

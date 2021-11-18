@@ -22,6 +22,9 @@ public interface OperationsProvider {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     MtuRequestOperation provideMtuChangeOperation(int requestedMtu);
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    SetPreferredPhyOperation provideSetPreferredPhyOperation(int requestedTxPhy, int requestedRxPhy, int requestedPhyOptions);
+
     CharacteristicReadOperation provideReadCharacteristic(BluetoothGattCharacteristic characteristic);
 
     DescriptorReadOperation provideReadDescriptor(BluetoothGattDescriptor descriptor);

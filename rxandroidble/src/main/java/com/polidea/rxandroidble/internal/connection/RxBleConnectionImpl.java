@@ -125,6 +125,12 @@ public class RxBleConnectionImpl implements RxBleConnection {
     }
 
     @Override
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public Observable<Integer> setPreferredPhy(int txPhy, int rxPhy, int phyOptions) {
+        return operationQueue.queue(operationsProvider.provideSetPreferredPhyOperation(txPhy, rxPhy, phyOptions));
+    }
+
+    @Override
     public Observable<RxBleDeviceServices> discoverServices() {
         return serviceDiscoveryManager.getDiscoverServicesObservable(20L, TimeUnit.SECONDS);
     }

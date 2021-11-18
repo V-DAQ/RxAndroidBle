@@ -568,6 +568,18 @@ public interface RxBleConnection {
     Observable<Integer> requestMtu(@IntRange(from = GATT_MTU_MINIMUM, to = GATT_MTU_MAXIMUM) int mtu);
 
     /**
+     * Performs set preferred PHY request.
+     *
+     * Timeouts after 10 seconds.
+     *
+     * @return Observable emitting result of the PHY update.
+     * @throws BleGattCannotStartException
+     * @throws BleGattException
+     */
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    Observable<Integer> setPreferredPhy(int txPhy, int rxPhy, int phyOptions);
+
+    /**
      * Get currently negotiated MTU value. On pre-lollipop Android versions it will always return 23.
      *
      * @return currently negotiated MTU value.
