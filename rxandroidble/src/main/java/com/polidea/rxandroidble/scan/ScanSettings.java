@@ -151,6 +151,8 @@ public class ScanSettings implements Parcelable {
     @MatchNum
     private int mNumOfMatchesPerFilter;
 
+    private boolean mLegacy;
+
     @ScanMode
     public int getScanMode() {
         return mScanMode;
@@ -176,6 +178,10 @@ public class ScanSettings implements Parcelable {
         return mNumOfMatchesPerFilter;
     }
 
+    public boolean getLegacy() {
+        return mLegacy;
+    }
+
     /**
      * Returns report delay timestamp based on the device clock.
      */
@@ -184,13 +190,14 @@ public class ScanSettings implements Parcelable {
     }
 
     private ScanSettings(int scanMode, int callbackType,
-                         long reportDelayMillis, int matchMode, int numOfMatchesPerFilter, int phyMode) {
+                         long reportDelayMillis, int matchMode, int numOfMatchesPerFilter, int phyMode, boolean legacy) {
         mScanMode = scanMode;
         mCallbackType = callbackType;
         mReportDelayMillis = reportDelayMillis;
         mNumOfMatchesPerFilter = numOfMatchesPerFilter;
         mMatchMode = matchMode;
         mPhyMode = phyMode;
+        mLegacy = legacy;
     }
 
     private ScanSettings(Parcel in) {
@@ -246,6 +253,7 @@ public class ScanSettings implements Parcelable {
         private int mMatchMode = MATCH_MODE_AGGRESSIVE;
         private int mNumOfMatchesPerFilter = MATCH_NUM_MAX_ADVERTISEMENT;
         private int mPhyMode = PHY_LE_1M;
+        private boolean mLegacy = true;
 
         /**
          * Set scan mode for Bluetooth LE scan.
@@ -289,6 +297,14 @@ public class ScanSettings implements Parcelable {
                 throw new IllegalArgumentException("invalid callback type - " + callbackType);
             }
             mCallbackType = callbackType;
+            return this;
+        }
+
+        /**
+         * Set legacy mode for Bluetooth LE scan.
+         */
+        public ScanSettings.Builder setLegacy(boolean legacy) {
+            mLegacy = legacy;
             return this;
         }
 
@@ -359,7 +375,7 @@ public class ScanSettings implements Parcelable {
          */
         public ScanSettings build() {
             return new ScanSettings(mScanMode, mCallbackType,
-                    mReportDelayMillis, mMatchMode, mNumOfMatchesPerFilter, mPhyMode);
+                    mReportDelayMillis, mMatchMode, mNumOfMatchesPerFilter, mPhyMode, mLegacy);
         }
     }
 }

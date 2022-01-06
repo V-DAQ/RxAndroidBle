@@ -32,6 +32,9 @@ public class AndroidScanObjectsConverter {
         if (deviceSdk >= Build.VERSION_CODES.M) {
             setMarshmallowSettings(scanSettings, builder);
         }
+        if (deviceSdk >= Build.VERSION_CODES.O) {
+            setOreoSettings(scanSettings, builder);
+        }
         return builder
                 .setReportDelay(scanSettings.getReportDelayMillis())
                 .setScanMode(scanSettings.getScanMode())
@@ -44,6 +47,13 @@ public class AndroidScanObjectsConverter {
                 .setCallbackType(scanSettings.getCallbackType())
                 .setMatchMode(scanSettings.getMatchMode())
                 .setNumOfMatches(scanSettings.getNumOfMatches());
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    private void setOreoSettings(ScanSettings scanSettings, android.bluetooth.le.ScanSettings.Builder builder) {
+        builder
+                .setLegacy(scanSettings.getLegacy())
+                .setPhy(scanSettings.getPhyMode());
     }
 
     @Nullable
