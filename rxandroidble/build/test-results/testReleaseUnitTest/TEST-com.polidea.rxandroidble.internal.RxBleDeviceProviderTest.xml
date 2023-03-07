@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.RxBleDeviceProviderTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:17" hostname="Desk-James" time="0.168">
+  <properties/>
+  <testcase name="should return new BleDevice if getBleDevice was called for the first time" classname="com.polidea.rxandroidble.internal.RxBleDeviceProviderTest" time="0.011"/>
+  <testcase name="should return cached BleDevice for the same mac address" classname="com.polidea.rxandroidble.internal.RxBleDeviceProviderTest" time="0.001"/>
+  <testcase name="should return new BleDevice for the same mac address if reference was garbage collected" classname="com.polidea.rxandroidble.internal.RxBleDeviceProviderTest" time="0.156"/>
+  <testcase name="should return new BleDevice even though previously there was a call for different mac address" classname="com.polidea.rxandroidble.internal.RxBleDeviceProviderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

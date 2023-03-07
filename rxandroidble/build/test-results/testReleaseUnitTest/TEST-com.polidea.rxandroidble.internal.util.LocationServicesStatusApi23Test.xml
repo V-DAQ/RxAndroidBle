@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" tests="18" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:19" hostname="Desk-James" time="0.003">
+  <properties/>
+  <testcase name="isLocationPermissionOk should return value from CheckerLocationPermission.isLocationPermissionGranted (permissionGranted:true)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.002"/>
+  <testcase name="isLocationPermissionOk should return value from CheckerLocationPermission.isLocationPermissionGranted (permissionGranted:false)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:18 isAndroidWear:true)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:19 isAndroidWear:true)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:20 isAndroidWear:true)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:21 isAndroidWear:true)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:22 isAndroidWear:true)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:23 isAndroidWear:true)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:24 isAndroidWear:true)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:10000 isAndroidWear:true)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:18 isAndroidWear:false)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:19 isAndroidWear:false)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:20 isAndroidWear:false)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:21 isAndroidWear:false)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:22 isAndroidWear:false)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:23 isAndroidWear:false)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.001"/>
+  <testcase name="should check location provider only if needed (targetSdk:24 isAndroidWear:false)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <testcase name="should check location provider only if needed (targetSdk:10000 isAndroidWear:false)" classname="com.polidea.rxandroidble.internal.util.LocationServicesStatusApi23Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

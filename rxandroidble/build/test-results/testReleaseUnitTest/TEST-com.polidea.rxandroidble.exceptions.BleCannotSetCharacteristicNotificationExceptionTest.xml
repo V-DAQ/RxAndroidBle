@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.exceptions.BleCannotSetCharacteristicNotificationExceptionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:15" hostname="Desk-James" time="0.186">
+  <properties/>
+  <testcase name="toString should include message" classname="com.polidea.rxandroidble.exceptions.BleCannotSetCharacteristicNotificationExceptionTest" time="0.186"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

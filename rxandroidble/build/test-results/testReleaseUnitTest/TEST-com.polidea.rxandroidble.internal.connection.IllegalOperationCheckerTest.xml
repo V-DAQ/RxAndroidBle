@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.connection.IllegalOperationCheckerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:16" hostname="Desk-James" time="0.015">
+  <properties/>
+  <testcase name="should handle message if no property matches" classname="com.polidea.rxandroidble.internal.connection.IllegalOperationCheckerTest" time="0.014"/>
+  <testcase name="should not handle message if the only needed property matches" classname="com.polidea.rxandroidble.internal.connection.IllegalOperationCheckerTest" time="0.001"/>
+  <testcase name="should not handle message if at least one of the needed properties match" classname="com.polidea.rxandroidble.internal.connection.IllegalOperationCheckerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

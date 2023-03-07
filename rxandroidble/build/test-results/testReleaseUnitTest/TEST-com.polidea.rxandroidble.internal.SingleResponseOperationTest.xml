@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.SingleResponseOperationTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:19" hostname="Desk-James" time="0.01">
+  <properties/>
+  <testcase name="should emit onNext and onComplete on happy path" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.005"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation start will fail[0]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation start will fail[1]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation start will fail[2]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation start will fail[3]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.001"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation start will fail[4]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation start will fail[5]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation start will fail[6]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation callback will timeout[0]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.001"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation callback will timeout[1]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation callback will timeout[2]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation callback will timeout[3]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation callback will timeout[4]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation callback will timeout[5]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should emit onError() with a proper BleGattOperationType when operation callback will timeout[6]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should pass to onError() throwable from callback" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should release queue after the callback will emit when unsubscribed[0]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <testcase name="should release queue after the callback will emit when unsubscribed[1]" classname="com.polidea.rxandroidble.internal.SingleResponseOperationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.RxBleClientTest" tests="55" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:19" hostname="Desk-James" time="0.115">
+  <properties/>
+  <testcase name="should return bonded devices" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.056"/>
+  <testcase name="should call ScanPreconditionVerifier.verify() prior to queueing scan operation[0]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.008"/>
+  <testcase name="should call ScanPreconditionVerifier.verify() prior to queueing scan operation[1]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.004"/>
+  <testcase name="should proxy an error from ScanPreconditionVerifier.verify() when starting a scan[0]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should proxy an error from ScanPreconditionVerifier.verify() when starting a scan[1]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should start BLE scan if subscriber subscribes to the scan observable" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should queue scan operation on subscribe (New API)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should not start scan until observable is subscribed" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should stop scan after subscriber is unsubscribed from scan observable" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should stop and unsubscribe in case of scan throws exception" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.003"/>
+  <testcase name="should stop scan after all subscribers are unsubscribed" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should not stop scan if not all subscribers are unsubscribed" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should start scan only once even if observable has more subscribers" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should not replay scan results to second observer if it subscribed after scan emission" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit BleScanException if bluetooth scan failed to start" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit BleScanException if bluetooth was disabled during scan[0]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit BleScanException if bluetooth was disabled during scan[1]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit BleScanException if bluetooth has been disabled scan[0]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit BleScanException if bluetooth has been disabled scan[1]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit BleScanException if bluetooth has been disabled scan[2]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.002"/>
+  <testcase name="should emit BleScanException if bluetooth has been disabled scan[3]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit error if bluetooth is not available" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.003"/>
+  <testcase name="should emit BleScanException if location permission was not granted[0]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.002"/>
+  <testcase name="should emit BleScanException if location permission was not granted[1]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit BleScanException if location permission was not granted[2]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit BleScanException if location permission was not granted[3]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit BleScanException if location services are not ok (LocationProviderOk:true)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit BleScanException if location services are not ok (LocationProviderOk:true)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit BleScanException if location services are not ok (LocationProviderOk:false)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit BleScanException if location services are not ok (LocationProviderOk:false)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit BleScanException if ScanPreconditionVerifier will suggest a date to start a scan[0]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.002"/>
+  <testcase name="should emit BleScanException if ScanPreconditionVerifier will suggest a date to start a scan[1]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit BleScanException if ScanPreconditionVerifier will suggest a date to start a scan[2]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit BleScanException if ScanPreconditionVerifier will suggest a date to start a scan[3]" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit BleScanException if BluetoothAdapter will be turned off during a scan" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.003"/>
+  <testcase name="should emit devices only if matching filter (Empty filter, one public service)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.004"/>
+  <testcase name="should emit devices only if matching filter (Empty filter, one public service, two devices)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit devices only if matching filter (Empty filter, two public services)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit devices only if matching filter (Empty filter, no public services)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit devices only if matching filter (No filter, one public service)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.002"/>
+  <testcase name="should emit devices only if matching filter (No filter, two public services)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit devices only if matching filter (No filter, no public services)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit devices only if matching filter (One filter, device without public services)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit devices only if matching filter (One filter, device with matching public service)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit devices only if matching filter (One filter, device with matching public service and one more not matching)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit devices only if matching filter (One filter, two devices, both with one matching service)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit devices only if matching filter (One filter, two devices, one without public services, second with matching service)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit devices only if matching filter (Two filtered UUIDs, two devices without public services)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit devices only if matching filter (Two filtered UUIDs, two devices, both matches only by one service)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.001"/>
+  <testcase name="should emit devices only if matching filter (Two filtered UUIDs, two devices, one matches by both services, second matching only partially)" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit device if has matching public service plus some more not defined in filter" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should emit result with all parameters" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.003"/>
+  <testcase name="should throw UnsupportedOperationException if .getBleDevice() is called on system that has no Bluetooth capabilities" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should throw UnsupportedOperationException if .getBondedDevices() is called on system that has no Bluetooth capabilities" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.0"/>
+  <testcase name="should get ClientStateObservable from Lazy when called .observeStateChanges()" classname="com.polidea.rxandroidble.RxBleClientTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

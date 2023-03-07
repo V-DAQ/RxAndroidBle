@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.6.1">
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\ClientComponent.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\ClientScope.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\ConnectionSetup.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\NotificationSetupMode.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\RxBleAdapterStateObservable.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\RxBleClient.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\RxBleClientImpl.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\RxBleConnection.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\RxBleCustomOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\RxBleDevice.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\RxBleDeviceServices.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\RxBleRadioOperationCustom.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\RxBleScanResult.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\Timeout.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleAdapterDisabledException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleAlreadyConnectedException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleCannotSetCharacteristicNotificationException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleCharacteristicNotFoundException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleConflictingNotificationAlreadySetException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleDisconnectedException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleGattCallbackTimeoutException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleGattCannotStartException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleGattCharacteristicException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleGattDescriptorException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleGattException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleGattOperationType.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleScanException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\exceptions\BleServiceNotFoundException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\helpers\AdvertisedServiceUUIDExtractor.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\helpers\ByteArrayBatchObservable.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\helpers\LocationServicesOkObservable.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\helpers\ValueInterpreter.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\BleIllegalOperationException.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\BluetoothGattCharacteristicProperty.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\DeviceComponent.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\DeviceModule.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\DeviceModuleBinder.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\DeviceScope.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\Priority.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\QueueOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\RxBleDeviceImpl.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\RxBleDeviceProvider.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\RxBleLog.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\SingleResponseOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\cache\CacheEntry.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\cache\DeviceComponentCache.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\cache\DeviceComponentWeakReference.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\BluetoothGattProvider.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\ConnectionComponent.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\ConnectionModule.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\ConnectionModuleBinder.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\ConnectionScope.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\ConnectionStateChangeListener.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\ConnectionSubscriptionWatcher.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\Connector.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\ConnectorImpl.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\ConstantPayloadSizeLimit.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\DescriptorWriter.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\DisconnectAction.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\DisconnectionRouter.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\DisconnectionRouterInput.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\DisconnectionRouterOutput.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\IllegalOperationChecker.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\IllegalOperationHandler.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\IllegalOperationMessageCreator.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\ImmediateSerializedBatchAckStrategy.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\LoggingIllegalOperationHandler.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\LongWriteOperationBuilderImpl.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\MtuBasedPayloadSizeLimit.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\MtuProvider.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\MtuWatcher.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\NativeCallbackDispatcher.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\NoRetryStrategy.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\NotificationAndIndicationManager.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\PayloadSizeLimitProvider.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\RxBleConnectionImpl.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\RxBleGattCallback.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\ServiceDiscoveryManager.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\connection\ThrowingIllegalOperationHandler.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\CharacteristicLongWriteOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\CharacteristicReadOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\CharacteristicWriteOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\ConnectOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\ConnectionPriorityChangeOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\DescriptorReadOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\DescriptorWriteOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\DisconnectOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\LegacyScanOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\MtuRequestOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\Operation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\OperationsProvider.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\OperationsProviderImpl.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\ReadRssiOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\ScanOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\ScanOperationApi18.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\ScanOperationApi21.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\ServiceDiscoveryOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\SetPreferredPhyOperation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\operations\TimeoutConfiguration.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\AndroidScanObjectsConverter.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\EmulatedScanFilterMatcher.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\InternalScanResultCreator.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\InternalToExternalScanResultConverter.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\RxBleInternalScanResult.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\RxBleInternalScanResultLegacy.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\ScanPreconditionsVerifier.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\ScanPreconditionsVerifierApi18.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\ScanPreconditionsVerifierApi24.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\ScanRecordImplCompat.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\ScanRecordImplNativeWrapper.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\ScanSettingsEmulator.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\ScanSetup.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\ScanSetupBuilder.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\ScanSetupBuilderImplApi18.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\ScanSetupBuilderImplApi21.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\scan\ScanSetupBuilderImplApi23.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\serialization\ClientOperationQueue.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\serialization\ClientOperationQueueImpl.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\serialization\ConnectionOperationQueue.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\serialization\ConnectionOperationQueueImpl.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\serialization\FIFORunnableEntry.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\serialization\OperationPriorityFifoBlockingQueue.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\serialization\QueueAwaitReleaseInterface.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\serialization\QueueReleaseInterface.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\serialization\QueueSemaphore.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\ActiveCharacteristicNotification.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\BleConnectionCompat.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\ByteAssociation.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\CharacteristicChangedEvent.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\CharacteristicNotificationId.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\CharacteristicPropertiesParser.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\CheckerLocationPermission.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\CheckerLocationProvider.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\ClientStateObservable.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\LocationServicesOkObservableApi23.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\LocationServicesStatus.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\LocationServicesStatusApi18.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\LocationServicesStatusApi23.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\ObservableUtil.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\OperationLogger.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\QueueReleasingEmitterWrapper.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\RxBleAdapterWrapper.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\RxBleServicesLogger.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\internal\util\UUIDUtil.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\scan\ScanCallbackType.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\scan\ScanFilter.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\scan\ScanRecord.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\scan\ScanResult.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\scan\ScanSettings.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\utils\ConnectionSharingAdapter.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\utils\GattStatusParser.java">
+</file>
+<file name="C:\Users\JamesOliver\Documents\V-DAQWorkspace\interface\interface-obm-react-native\lib\ble\RxAndroidBle\rxandroidble\src\main\java\com\polidea\rxandroidble\utils\StandardUUIDsParser.java">
+</file>
+</checkstyle>

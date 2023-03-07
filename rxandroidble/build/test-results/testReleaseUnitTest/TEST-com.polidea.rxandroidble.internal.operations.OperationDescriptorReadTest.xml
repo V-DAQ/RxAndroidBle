@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:17" hostname="Desk-James" time="0.013">
+  <properties/>
+  <testcase name="should call BluetoothGatt.readDescriptor() only once on single read when run()" classname="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" time="0.007"/>
+  <testcase name="asObservable() should not emit error when BluetoothGatt.readDescriptor() returns true while run()" classname="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" time="0.001"/>
+  <testcase name="asObservable() should emit error when BluetoothGatt.readDescriptor() returns false while run()" classname="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" time="0.001"/>
+  <testcase name="asObservable() should emit error when RxBleGattCallback.getOnDescriptorRead() emits error" classname="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" time="0.001"/>
+  <testcase name="asObservable() should not emit when RxBleGattCallback.getOnDescriptorRead() emits before run()" classname="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" time="0.0"/>
+  <testcase name="asObservable() should emit next when RxBleGattCallback.getOnDescriptorRead() emits next" classname="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" time="0.0"/>
+  <testcase name="asObservable() emit only first descriptor value notified" classname="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" time="0.001"/>
+  <testcase name="asObservable() not emit descriptor value if BLE notified only with non matching descriptors" classname="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" time="0.0"/>
+  <testcase name="asObservable() emit only descriptor value for matching descriptor" classname="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" time="0.0"/>
+  <testcase name="should release QueueReleaseInterface after successful read" classname="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" time="0.001"/>
+  <testcase name="should release QueueReleaseInterface when read failed to start" classname="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" time="0.0"/>
+  <testcase name="should release QueueReleaseInterface when read failed" classname="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" time="0.0"/>
+  <testcase name="should timeout if RxBleGattCallback.onDescriptorRead() won't trigger in 30 seconds" classname="com.polidea.rxandroidble.internal.operations.OperationDescriptorReadTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

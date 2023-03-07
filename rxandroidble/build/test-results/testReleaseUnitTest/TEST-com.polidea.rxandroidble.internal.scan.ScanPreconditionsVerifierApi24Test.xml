@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi24Test" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:17" hostname="Desk-James" time="0.015">
+  <properties/>
+  <testcase name="should perform checks in proper order" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi24Test" time="0.007"/>
+  <testcase name="should proxy exception thrown by ScanPreconditionsVerifierApi18" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi24Test" time="0.006"/>
+  <testcase name="should throw BleScanException.UNDOCUMENTED_SCAN_THROTTLE if called 6th time during a 30 second window" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi24Test" time="0.002"/>
+  <testcase name="should not throw BleScanException.UNDOCUMENTED_SCAN_THROTTLE if called 6th time after a 30 second window" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi24Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

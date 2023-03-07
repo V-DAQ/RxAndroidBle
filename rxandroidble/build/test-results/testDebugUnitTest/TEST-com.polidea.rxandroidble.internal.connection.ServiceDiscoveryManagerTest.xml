@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.connection.ServiceDiscoveryManagerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:12" hostname="Desk-James" time="0.021">
+  <properties/>
+  <testcase name="should return services instantly if they were already discovered and are in BluetoothGatt cache" classname="com.polidea.rxandroidble.internal.connection.ServiceDiscoveryManagerTest" time="0.013"/>
+  <testcase name="should try to discover services if there are no services cached within BluetoothGatt" classname="com.polidea.rxandroidble.internal.connection.ServiceDiscoveryManagerTest" time="0.003"/>
+  <testcase name="should proxy services from ClientOperationQueue.queue()" classname="com.polidea.rxandroidble.internal.connection.ServiceDiscoveryManagerTest" time="0.002"/>
+  <testcase name="should proxy exceptions from ClientOperationQueue.queue()" classname="com.polidea.rxandroidble.internal.connection.ServiceDiscoveryManagerTest" time="0.0"/>
+  <testcase name="should be able to run again if first operation failed" classname="com.polidea.rxandroidble.internal.connection.ServiceDiscoveryManagerTest" time="0.001"/>
+  <testcase name="should share the same action if more subscribers wait for results" classname="com.polidea.rxandroidble.internal.connection.ServiceDiscoveryManagerTest" time="0.0"/>
+  <testcase name="should cache the result if more subscribers would request services later" classname="com.polidea.rxandroidble.internal.connection.ServiceDiscoveryManagerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

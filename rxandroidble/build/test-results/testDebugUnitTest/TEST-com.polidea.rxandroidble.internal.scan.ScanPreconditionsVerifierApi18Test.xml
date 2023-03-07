@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" tests="17" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:13" hostname="Desk-James" time="0.006">
+  <properties/>
+  <testcase name="should perform checks in proper order" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.004"/>
+  <testcase name="should not throw any exception if all checks return true" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.BLUETOOTH_NOT_AVAILABLE if no adapter is available[0]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.001"/>
+  <testcase name="should throw BleScanException.BLUETOOTH_NOT_AVAILABLE if no adapter is available[1]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.BLUETOOTH_NOT_AVAILABLE if no adapter is available[2]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.BLUETOOTH_NOT_AVAILABLE if no adapter is available[3]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.BLUETOOTH_NOT_AVAILABLE if no adapter is available[4]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.BLUETOOTH_NOT_AVAILABLE if no adapter is available[5]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.BLUETOOTH_NOT_AVAILABLE if no adapter is available[6]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.BLUETOOTH_NOT_AVAILABLE if no adapter is available[7]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.BLUETOOTH_DISABLED if adapter is not enabled[0]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.BLUETOOTH_DISABLED if adapter is not enabled[1]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.BLUETOOTH_DISABLED if adapter is not enabled[2]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.BLUETOOTH_DISABLED if adapter is not enabled[3]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.LOCATION_PERMISSION_MISSING if location permission is not granted[0]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.LOCATION_PERMISSION_MISSING if location permission is not granted[1]" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <testcase name="should throw BleScanException.LOCATION_SERVICES_DISABLED if location services are not enabled" classname="com.polidea.rxandroidble.internal.scan.ScanPreconditionsVerifierApi18Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

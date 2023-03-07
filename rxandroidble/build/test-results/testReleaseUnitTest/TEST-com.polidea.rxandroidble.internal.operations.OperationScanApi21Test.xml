@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" tests="14" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:17" hostname="Desk-James" time="0.027">
+  <properties/>
+  <testcase name="should call AndroidScanObjectsCreator and RxBleAdapterWrapper.startLeScan() when run() and release queue" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.017"/>
+  <testcase name="asObservable() should not emit error when BluetoothLeScannerCompat.startScan() will not throw" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.0"/>
+  <testcase name="asObservable() should emit error when BluetoothLeScannerCompat.startScan() will throw" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.002"/>
+  <testcase name="should call InternalScanResultCreator(int, android.bluetooth.le.ScanResult) and emit a value when ScanCallback will get a single scan result[0]" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.004"/>
+  <testcase name="should call InternalScanResultCreator(int, android.bluetooth.le.ScanResult) and emit a value when ScanCallback will get a single scan result[1]" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.0"/>
+  <testcase name="should call InternalScanResultCreator(int, android.bluetooth.le.ScanResult) and emit a value when ScanCallback will get a single scan result[2]" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.0"/>
+  <testcase name="should call InternalScanResultCreator(int, android.bluetooth.le.ScanResult) and emit a value when ScanCallback will get a single scan result[3]" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.0"/>
+  <testcase name="should call InternalScanResultCreator(int, android.bluetooth.le.ScanResult) and emit a values when ScanCallback will get a batched scan result" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.002"/>
+  <testcase name="should call EmulatedScanFilterMatcher and emit value depending on returned values (if any matches) when ScanCallback will get a single scan result[0]" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.0"/>
+  <testcase name="should call EmulatedScanFilterMatcher and emit value depending on returned values (if any matches) when ScanCallback will get a single scan result[1]" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.0"/>
+  <testcase name="should call EmulatedScanFilterMatcher and emit value depending on returned values (if any matches) when ScanCallback will get a batched scan result[0]" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.0"/>
+  <testcase name="should call EmulatedScanFilterMatcher and emit value depending on returned values (if any matches) when ScanCallback will get a batched scan result[1]" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.001"/>
+  <testcase name="should call EmulatedScanFilterMatcher and emit value depending on returned values (if any matches) when ScanCallback will get a batched scan result[2]" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.0"/>
+  <testcase name="should call EmulatedScanFilterMatcher and emit value depending on returned values (if any matches) when ScanCallback will get a batched scan result[3]" classname="com.polidea.rxandroidble.internal.operations.OperationScanApi21Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

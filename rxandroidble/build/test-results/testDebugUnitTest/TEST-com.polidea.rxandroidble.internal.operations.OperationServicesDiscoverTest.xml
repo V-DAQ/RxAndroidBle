@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.operations.OperationServicesDiscoverTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:13" hostname="Desk-James" time="0.014">
+  <properties/>
+  <testcase name="should call BluetoothGatt.discoverServices() exactly once when run()" classname="com.polidea.rxandroidble.internal.operations.OperationServicesDiscoverTest" time="0.004"/>
+  <testcase name="should emit an error if BluetoothGatt.discoverServices() returns false" classname="com.polidea.rxandroidble.internal.operations.OperationServicesDiscoverTest" time="0.001"/>
+  <testcase name="should emit an error if RxBleGattCallback will emit error on RxBleGattCallback.getOnServicesDiscovered() and release queue" classname="com.polidea.rxandroidble.internal.operations.OperationServicesDiscoverTest" time="0.0"/>
+  <testcase name="should emit exactly one value when RxBleGattCallback.getOnServicesDiscovered() emits value" classname="com.polidea.rxandroidble.internal.operations.OperationServicesDiscoverTest" time="0.0"/>
+  <testcase name="should timeout after specified amount of time if BluetoothGatt.getServices() will return empty list" classname="com.polidea.rxandroidble.internal.operations.OperationServicesDiscoverTest" time="0.001"/>
+  <testcase name="should not timeout after specified amount of time if BluetoothGatt.getServices() will return non-empty list" classname="com.polidea.rxandroidble.internal.operations.OperationServicesDiscoverTest" time="0.001"/>
+  <testcase name="should emit valid RxBleServices after specified timeout was reached if BluetoothGatt won't get onDiscoveryCompleted() callback (therefore no RxBleGattCallback.onServicesDiscovered() emission) if BluetoothGatt.getServices() will return not-empty list - should wait before emitting 5 more seconds" classname="com.polidea.rxandroidble.internal.operations.OperationServicesDiscoverTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

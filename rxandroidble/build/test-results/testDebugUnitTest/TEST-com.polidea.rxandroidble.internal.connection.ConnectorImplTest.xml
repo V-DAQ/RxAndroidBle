@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.connection.ConnectorImplTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:08" hostname="Desk-James" time="0.052">
+  <properties/>
+  <testcase name="subscribing prepareConnection() should pass the provided ConnectionSetup in ConnectionModule to the ConnectionComponent.Builder[0]" classname="com.polidea.rxandroidble.internal.connection.ConnectorImplTest" time="0.038"/>
+  <testcase name="subscribing prepareConnection() should pass the provided ConnectionSetup in ConnectionModule to the ConnectionComponent.Builder[1]" classname="com.polidea.rxandroidble.internal.connection.ConnectorImplTest" time="0.001"/>
+  <testcase name="subscribing prepareConnection() should pass the provided ConnectionSetup in ConnectionModule to the ConnectionComponent.Builder[2]" classname="com.polidea.rxandroidble.internal.connection.ConnectorImplTest" time="0.0"/>
+  <testcase name="subscribing prepareConnection() should pass the provided ConnectionSetup in ConnectionModule to the ConnectionComponent.Builder[3]" classname="com.polidea.rxandroidble.internal.connection.ConnectorImplTest" time="0.0"/>
+  <testcase name="should call ConnectionSubscriptionAware according to prepareConnection() subscription" classname="com.polidea.rxandroidble.internal.connection.ConnectorImplTest" time="0.003"/>
+  <testcase name="should call ConnectionSubscriptionAware according to prepareConnection() subscription (error case)" classname="com.polidea.rxandroidble.internal.connection.ConnectorImplTest" time="0.002"/>
+  <testcase name="subscribing prepareConnection() should schedule provided ConnectOperation on ClientOperationQueue" classname="com.polidea.rxandroidble.internal.connection.ConnectorImplTest" time="0.0"/>
+  <testcase name="prepareConnection() should emit RxBleConnection and not complete" classname="com.polidea.rxandroidble.internal.connection.ConnectorImplTest" time="0.002"/>
+  <testcase name="prepareConnection() should emit error from RxBleGattCallback.disconnectedErrorObservable()" classname="com.polidea.rxandroidble.internal.connection.ConnectorImplTest" time="0.001"/>
+  <testcase name="prepareConnection() should emit exception emitted by RxBleCallback.observeDisconnect()" classname="com.polidea.rxandroidble.internal.connection.ConnectorImplTest" time="0.002"/>
+  <testcase name="prepareConnection() should emit exception emitted by RxBleCallback.observeDisconnect() even after connection" classname="com.polidea.rxandroidble.internal.connection.ConnectorImplTest" time="0.001"/>
+  <testcase name="should call ConnectionComponent.rxBleConnection() only after ConnectOperation will emit" classname="com.polidea.rxandroidble.internal.connection.ConnectorImplTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

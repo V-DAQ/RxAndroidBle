@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" tests="43" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:12" hostname="Desk-James" time="0.147">
+  <properties/>
+  <testcase name="should proxy all calls to .discoverServices() to ServiceDiscoveryManager with proper timeouts" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.039"/>
+  <testcase name="should emit BleGattCannotStartException if failed to start writing characteristic[0]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.03"/>
+  <testcase name="should emit BleGattCannotStartException if failed to start writing characteristic[1]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.0"/>
+  <testcase name="should emit BleGattCannotStartException if failed to start writing characteristic[2]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should emit BleGattCannotStartException if failed to start reading characteristic[0]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.004"/>
+  <testcase name="should emit BleGattCannotStartException if failed to start reading characteristic[1]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should emit BleGattCannotStartException if failed to start retrieving rssi" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.004"/>
+  <testcase name="should emit BleCharacteristicNotFoundException during read operation if no services were found" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should emit BleCharacteristicNotFoundException during read operation if characteristic was not found" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.003"/>
+  <testcase name="should read first found characteristic with matching UUID" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.01"/>
+  <testcase name="should emit BleCharacteristicNotFoundException if there are no services during write operation" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should emit BleCharacteristicNotFoundException if characteristic was not found during write operation" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should write characteristic and return written value[0]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.002"/>
+  <testcase name="should write characteristic and return written value[1]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should emit retrieved rssi" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.002"/>
+  <testcase name="should emit CharacteristicNotFoundException if matching characteristic wasn't found[0]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.002"/>
+  <testcase name="should emit CharacteristicNotFoundException if matching characteristic wasn't found[1]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.0"/>
+  <testcase name="should call NotificationAndIndicationManager when called by .setupNotification() / .setupIndication() properly[0]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should call NotificationAndIndicationManager when called by .setupNotification() / .setupIndication() properly[1]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.0"/>
+  <testcase name="should call NotificationAndIndicationManager when called by .setupNotification() / .setupIndication() properly[2]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should call NotificationAndIndicationManager when called by .setupNotification() / .setupIndication() properly[3]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.0"/>
+  <testcase name="should call NotificationAndIndicationManager when called by .setupNotification() / .setupIndication() properly[4]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.0"/>
+  <testcase name="should call NotificationAndIndicationManager when called by .setupNotification() / .setupIndication() properly[5]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.0"/>
+  <testcase name="should call NotificationAndIndicationManager when called by .setupNotification() / .setupIndication() properly[6]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.0"/>
+  <testcase name="should call NotificationAndIndicationManager when called by .setupNotification() / .setupIndication() properly[7]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.0"/>
+  <testcase name="should call NotificationAndIndicationManager when called by .setupNotification() / .setupIndication() properly[8]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.0"/>
+  <testcase name="should call NotificationAndIndicationManager when called by .setupNotification() / .setupIndication() properly[9]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should call NotificationAndIndicationManager when called by .setupNotification() / .setupIndication() properly[10]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.0"/>
+  <testcase name="should call NotificationAndIndicationManager when called by .setupNotification() / .setupIndication() properly[11]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should proxy .getMtu() calls to MtuProvider" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.0"/>
+  <testcase name="should pass items emitted by observable returned from RxBleCustomOperation.asObservable()" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.008"/>
+  <testcase name="should pass error if custom operation will throw out of RxBleCustomOperation.asObservable()" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should release the queue if custom operation will throw out of RxBleCustomOperation.asObservable()" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should pass error if observable returned from RxBleCustomOperation.asObservable() will emit error" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should clear native gatt callback after custom operation is finished" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.007"/>
+  <testcase name="should clear native gatt callback after custom operation failed" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.003"/>
+  <testcase name="should release the queue if observable returned from RxBleCustomOperation.asObservable() will emit error" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should pass completion to subscriber when observable returned from RxBleCustomOperation.asObservable() will complete" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should release the queue when observable returned from RxBleCustomOperation.asObservable() will complete" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should throw illegal argument exception if RxBleCustomOperation.asObservable() return null" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should release queue if RxBleCustomOperation.asObservable() return null" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.001"/>
+  <testcase name="should release the queue when observable returned from RxBleCustomOperation.asObservable() will terminate even if was unsubscribed before[0]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.0"/>
+  <testcase name="should release the queue when observable returned from RxBleCustomOperation.asObservable() will terminate even if was unsubscribed before[1]" classname="com.polidea.rxandroidble.internal.connection.RxBleConnectionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

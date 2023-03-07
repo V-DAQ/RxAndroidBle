@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:12" hostname="Desk-James" time="0.008">
+  <properties/>
+  <testcase name="should call only once BluetoothGattCharacteristic.setValue() before calling BluetoothGatt.writeCharacteristic() on single write when run()" classname="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" time="0.002"/>
+  <testcase name="asObservable() should not emit error when BluetoothGatt.writeCharacteristic() returns true while run()" classname="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" time="0.002"/>
+  <testcase name="asObservable() should emit error when BluetoothGatt.writeCharacteristic() returns false while run()" classname="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" time="0.001"/>
+  <testcase name="asObservable() should emit error when RxBleGattCallback.getOnCharacteristicWrite() emits error" classname="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" time="0.001"/>
+  <testcase name="asObservable() should not emit when RxBleGattCallback.getOnCharacteristicWrite() emits before run()" classname="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" time="0.0"/>
+  <testcase name="asObservable() should emit next when RxBleGattCallback.getOnCharacteristicWrite() emits next" classname="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" time="0.0"/>
+  <testcase name="asObservable() emit only first characteristic value notified" classname="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" time="0.0"/>
+  <testcase name="asObservable() not emit characteristic value if BLE notified only with non matching characteristics" classname="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" time="0.0"/>
+  <testcase name="asObservable() emit only characteristic value with matching UUID" classname="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" time="0.001"/>
+  <testcase name="should release QueueReleaseInterface after successful write" classname="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" time="0.0"/>
+  <testcase name="should release QueueReleaseInterface when write failed to start" classname="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" time="0.0"/>
+  <testcase name="should release QueueReleaseInterface when write failed" classname="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" time="0.0"/>
+  <testcase name="should timeout if RxBleGattCallback.onCharacteristicWrite() won't trigger in 30 seconds" classname="com.polidea.rxandroidble.internal.operations.OperationCharacteristicWriteTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

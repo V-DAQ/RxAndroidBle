@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" tests="42" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:19" hostname="Desk-James" time="0.012">
+  <properties/>
+  <testcase name="should complete if BluetoothAdapter is not available[0]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[1]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[2]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[3]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[4]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[5]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[6]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[7]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[8]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[9]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[10]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[11]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[12]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[13]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[14]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should complete if BluetoothAdapter is not available[15]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[0]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.005"/>
+  <testcase name="should not complete if BluetoothAdapter is available[1]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[2]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[3]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[4]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[5]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.001"/>
+  <testcase name="should not complete if BluetoothAdapter is available[6]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[7]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[8]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[9]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[10]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[11]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[12]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[13]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[14]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should not complete if BluetoothAdapter is available[15]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should emit proper state when the permission is granted at some point[0]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.001"/>
+  <testcase name="should emit proper state when the permission is granted at some point[1]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should emit proper state when the permission is granted at some point[2]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should emit proper state when the permission is granted at some point[3]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should emit proper state when the permission is granted at some point[4]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should emit proper state when the permission is granted at some point[5]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should emit proper state when the permission is granted at some point[6]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.001"/>
+  <testcase name="should emit proper state when the permission is granted at some point[7]" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should emit LOCATION_SERVICES_NOT_ENABLED state when was READY but Location Services were turned off" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <testcase name="should emit BLUETOOTH_NOT_ENABLED state when was READY but Bluetooth was turned off" classname="com.polidea.rxandroidble.internal.util.ClientStateObservableTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

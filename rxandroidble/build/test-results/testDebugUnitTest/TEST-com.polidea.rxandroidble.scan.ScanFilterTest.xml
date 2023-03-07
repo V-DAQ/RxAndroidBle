@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.scan.ScanFilterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:14" hostname="Desk-James" time="0.007">
+  <properties/>
+  <testcase name="should match by device name if the name is present in ScanRecord" classname="com.polidea.rxandroidble.scan.ScanFilterTest" time="0.006"/>
+  <testcase name="should match by device name if the name is present in BluetoothDevice" classname="com.polidea.rxandroidble.scan.ScanFilterTest" time="0.0"/>
+  <testcase name="should not match by device name if the name is not present in BluetoothDevice nor ScanRecord" classname="com.polidea.rxandroidble.scan.ScanFilterTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

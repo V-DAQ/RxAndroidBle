@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:13" hostname="Desk-James" time="0.029">
+  <properties/>
+  <testcase name="should emit only the first scan result or after a certain time from .emulateScanCallback(FIRST_MATCH)[0]" classname="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" time="0.011"/>
+  <testcase name="should emit only the first scan result or after a certain time from .emulateScanCallback(FIRST_MATCH)[1]" classname="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" time="0.001"/>
+  <testcase name="should emit only the first scan result or after a certain time from .emulateScanCallback(FIRST_MATCH)[2]" classname="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" time="0.0"/>
+  <testcase name="should emit the first scan result of all devices scanned from .emulateScanCallback(FIRST_MATCH)[0]" classname="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" time="0.001"/>
+  <testcase name="should emit the first scan result of all devices scanned from .emulateScanCallback(FIRST_MATCH)[1]" classname="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" time="0.0"/>
+  <testcase name="should emit the first scan result of all devices scanned from .emulateScanCallback(FIRST_MATCH)[2]" classname="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" time="0.001"/>
+  <testcase name="should emit the first scan result of one device scanned from .emulateScanCallback(MATCH_LOST)" classname="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" time="0.002"/>
+  <testcase name="should emit only the last scan result and after a certain time from .emulateScanCallback(MATCH_LOST)[0]" classname="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" time="0.001"/>
+  <testcase name="should emit only the last scan result and after a certain time from .emulateScanCallback(MATCH_LOST)[1]" classname="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" time="0.0"/>
+  <testcase name="should emit the last scan result of all devices scanned from .emulateScanCallback(MATCH_LOST)" classname="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" time="0.003"/>
+  <testcase name="should emit the first and last scan result when scanned from .emulateScanCallback(FIRST_MATCH | MATCH_LOST)" classname="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" time="0.003"/>
+  <testcase name="should emit the first and last scan result for all devices when scanned from .emulateScanCallback(FIRST_MATCH | MATCH_LOST)" classname="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" time="0.004"/>
+  <testcase name="should not alter the input if called from .emulateScanCallback(ALL_MATCHES)" classname="com.polidea.rxandroidble.internal.scan.ScanSettingsEmulatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
