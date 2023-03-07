@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.polidea.rxandroidble.internal.util.ObservableUtilTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:19" hostname="Desk-James" time="0.003">
-  <properties/>
-  <testcase name="should pass through parameter on subscribe and not complete" classname="com.polidea.rxandroidble.internal.util.ObservableUtilTest" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

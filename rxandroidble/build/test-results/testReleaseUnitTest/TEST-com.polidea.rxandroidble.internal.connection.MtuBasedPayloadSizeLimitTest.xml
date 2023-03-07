@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.polidea.rxandroidble.internal.connection.MtuBasedPayloadSizeLimitTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-07T00:08:16" hostname="Desk-James" time="0.002">
-  <properties/>
-  <testcase name="should return current MTU decreased by the write MTU overhead[0]" classname="com.polidea.rxandroidble.internal.connection.MtuBasedPayloadSizeLimitTest" time="0.002"/>
-  <testcase name="should return current MTU decreased by the write MTU overhead[1]" classname="com.polidea.rxandroidble.internal.connection.MtuBasedPayloadSizeLimitTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
