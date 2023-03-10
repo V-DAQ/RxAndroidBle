@@ -20,6 +20,9 @@ import com.polidea.rxandroidble2.internal.DeviceComponent;
 import com.polidea.rxandroidble2.internal.RxBleLog;
 import com.polidea.rxandroidble2.internal.scan.BackgroundScannerImpl;
 import com.polidea.rxandroidble2.internal.scan.InternalToExternalScanResultConverter;
+import com.polidea.rxandroidble2.internal.scan.IsConnectableChecker;
+import com.polidea.rxandroidble2.internal.scan.IsConnectableCheckerApi18;
+import com.polidea.rxandroidble2.internal.scan.IsConnectableCheckerApi26;
 import com.polidea.rxandroidble2.internal.scan.RxBleInternalScanResult;
 import com.polidea.rxandroidble2.internal.scan.ScanPreconditionsVerifier;
 import com.polidea.rxandroidble2.internal.scan.ScanPreconditionsVerifierApi18;
@@ -89,6 +92,7 @@ public interface ClientComponent {
         public static final String BOOL_IS_ANDROID_WEAR = "android-wear";
         public static final String BOOL_IS_NEARBY_PERMISSION_NEVER_FOR_LOCATION = "nearby-permission-never-for-location";
         public static final String STRING_ARRAY_SCAN_PERMISSIONS = "scan-permissions";
+        public static final String STRING_ARRAY_CONNECT_PERMISSIONS = "connect-permissions";
 
         private PlatformConstants() {
 
@@ -184,6 +188,22 @@ public interface ClientComponent {
             return new String[][]{
                     new String[]{Manifest.permission.BLUETOOTH_SCAN},
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION}
+            };
+        }
+
+        @Provides
+        @Named(PlatformConstants.STRING_ARRAY_CONNECT_PERMISSIONS)
+        static String[][] provideRecommendedConnectRuntimePermissionNames(
+                @Named(PlatformConstants.INT_DEVICE_SDK) int deviceSdk,
+                @Named(PlatformConstants.INT_TARGET_SDK) int targetSdk
+        ) {
+            int sdkVersion = Math.min(deviceSdk, targetSdk);
+            if (sdkVersion < 31 /* pre Android 12 */) {
+                // Until API 31 (Android 12) no permission is needed for connecting to a BLE device
+                return new String[][]{};
+            }
+            return new String[][]{
+                    new String[]{Manifest.permission.BLUETOOTH_CONNECT}
             };
         }
 
@@ -323,6 +343,19 @@ public interface ClientComponent {
                 return scanSetupBuilderProviderForApi21.get();
             }
             return scanSetupBuilderProviderForApi23.get();
+        }
+
+        @Provides
+        @ClientScope
+        static IsConnectableChecker provideIsConnectableChecker(
+                @Named(PlatformConstants.INT_DEVICE_SDK) int deviceSdk,
+                Provider<IsConnectableCheckerApi18> isConnectableCheckerApi18,
+                Provider<IsConnectableCheckerApi26> isConnectableCheckerApi26
+        ) {
+            if (deviceSdk < Build.VERSION_CODES.O) {
+                return isConnectableCheckerApi18.get();
+            }
+            return isConnectableCheckerApi26.get();
         }
 
         @Provides

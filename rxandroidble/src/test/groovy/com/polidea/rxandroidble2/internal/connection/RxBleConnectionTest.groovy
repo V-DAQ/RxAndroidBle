@@ -1,6 +1,9 @@
 package com.polidea.rxandroidble2.internal.connection
 
-import android.bluetooth.*
+import android.bluetooth.BluetoothGatt
+import android.bluetooth.BluetoothGattCharacteristic
+import android.bluetooth.BluetoothGattService
+import android.bluetooth.BluetoothGattCallback
 import androidx.annotation.NonNull
 import com.polidea.rxandroidble2.*
 import com.polidea.rxandroidble2.exceptions.BleCharacteristicNotFoundException
@@ -127,7 +130,12 @@ class RxBleConnectionTest extends Specification {
 
         then:
         testSubscriber.assertError(BleGattCannotStartException)
-        testSubscriber.assertErrorMessage("GATT exception from MAC address null, with type BleGattOperation{description='READ_RSSI'}")
+        testSubscriber.assertError(new Predicate<BleGattCannotStartException>() {
+            @Override
+            boolean test(@io.reactivex.annotations.NonNull BleGattCannotStartException throwable) throws Exception {
+                return throwable.message == "GATT exception from MAC address null, with type BleGattOperation{description='READ_RSSI'}"
+            }
+        })
         testSubscriber.assertError(new Predicate<BleGattCannotStartException>() {
             @Override
             boolean test(@io.reactivex.annotations.NonNull BleGattCannotStartException throwable) throws Exception {

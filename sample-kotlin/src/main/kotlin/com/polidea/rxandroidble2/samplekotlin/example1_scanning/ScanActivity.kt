@@ -1,19 +1,18 @@
 package com.polidea.rxandroidble2.samplekotlin.example1_scanning
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.polidea.rxandroidble2.exceptions.BleScanException
 import com.polidea.rxandroidble2.samplekotlin.DeviceActivity
 import com.polidea.rxandroidble2.samplekotlin.R
 import com.polidea.rxandroidble2.samplekotlin.SampleApplication
 import com.polidea.rxandroidble2.samplekotlin.example1a_background_scanning.BackgroundScanActivity
-import com.polidea.rxandroidble2.samplekotlin.util.isLocationPermissionGranted
-import com.polidea.rxandroidble2.samplekotlin.util.requestLocationPermission
+import com.polidea.rxandroidble2.samplekotlin.util.isScanPermissionGranted
+import com.polidea.rxandroidble2.samplekotlin.util.requestScanPermission
 import com.polidea.rxandroidble2.samplekotlin.util.showError
 import com.polidea.rxandroidble2.scan.ScanFilter
-import com.polidea.rxandroidble2.scan.ScanResult
 import com.polidea.rxandroidble2.scan.ScanSettings
-import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.main.activity_example1.background_scan_btn
@@ -57,19 +56,15 @@ class ScanActivity : AppCompatActivity() {
         } else {
             if (rxBleClient.isScanRuntimePermissionGranted) {
                 scanBleDevices()
-                    .observeOn(AndroidSchedulers.mainThread())
-                    .doFinally { dispose() }
-                    .subscribe({ resultsAdapter.addScanResult(it) }, { onScanFailure(it) })
-                    .let { scanDisposable = it }
             } else {
                 hasClickedScan = true
-                requestLocationPermission(rxBleClient)
+                requestScanPermission(rxBleClient)
             }
         }
         updateButtonUIState()
     }
 
-    private fun scanBleDevices(): Observable<ScanResult> {
+    private fun scanBleDevices() {
         val scanSettings = ScanSettings.Builder()
             .setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY)
             .setCallbackType(ScanSettings.CALLBACK_TYPE_ALL_MATCHES)
@@ -80,7 +75,11 @@ class ScanActivity : AppCompatActivity() {
             // add custom filters if needed
             .build()
 
-        return rxBleClient.scanBleDevices(scanSettings, scanFilter)
+        rxBleClient.scanBleDevices(scanSettings, scanFilter)
+            .observeOn(AndroidSchedulers.mainThread())
+            .doFinally { dispose() }
+            .subscribe({ resultsAdapter.addScanResult(it) }, { onScanFailure(it) })
+            .let { scanDisposable = it }
     }
 
     private fun dispose() {
@@ -91,13 +90,14 @@ class ScanActivity : AppCompatActivity() {
 
     private fun onScanFailure(throwable: Throwable) {
         if (throwable is BleScanException) showError(throwable)
+        else Log.w("ScanActivity", "Scan failed", throwable)
     }
 
     private fun updateButtonUIState() =
         scan_toggle_btn.setText(if (isScanning) R.string.button_stop_scan else R.string.button_start_scan)
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
-        if (isLocationPermissionGranted(requestCode, grantResults) && hasClickedScan) {
+        if (isScanPermissionGranted(requestCode, grantResults) && hasClickedScan) {
             hasClickedScan = false
             scanBleDevices()
         }

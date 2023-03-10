@@ -1,46 +1,33 @@
 package com.polidea.rxandroidble2.internal.util;
 
 
-import android.content.Context;
-import android.content.pm.PackageManager;
-import android.os.Process;
+import com.polidea.rxandroidble2.ClientComponent;
+import com.polidea.rxandroidble2.ClientScope;
 
 import bleshadow.javax.inject.Inject;
 import bleshadow.javax.inject.Named;
 
-import com.polidea.rxandroidble2.ClientComponent;
-import com.polidea.rxandroidble2.ClientScope;
-
 @ClientScope
 public class CheckerScanPermission {
 
-    private final Context context;
+    private final CheckerPermission checkerPermission;
     private final String[][] scanPermissions;
 
     @Inject
     CheckerScanPermission(
-            Context context,
+            CheckerPermission checkerPermission,
             @Named(ClientComponent.PlatformConstants.STRING_ARRAY_SCAN_PERMISSIONS) String[][] scanPermissions
     ) {
-        this.context = context;
+        this.checkerPermission = checkerPermission;
         this.scanPermissions = scanPermissions;
     }
 
     public boolean isScanRuntimePermissionGranted() {
         boolean allNeededPermissionsGranted = true;
         for (String[] neededPermissions : scanPermissions) {
-            allNeededPermissionsGranted &= isAnyPermissionGranted(neededPermissions);
+            allNeededPermissionsGranted &= checkerPermission.isAnyPermissionGranted(neededPermissions);
         }
         return allNeededPermissionsGranted;
-    }
-
-    private boolean isAnyPermissionGranted(String[] acceptablePermissions) {
-        for (String acceptablePermission : acceptablePermissions) {
-            if (isPermissionGranted(acceptablePermission)) {
-                return true;
-            }
-        }
-        return false;
     }
 
     public String[] getRecommendedScanRuntimePermissions() {
@@ -56,18 +43,5 @@ public class CheckerScanPermission {
             }
         }
         return resultPermissions;
-    }
-
-    /**
-     * Copied from android.support.v4.content.ContextCompat for backwards compatibility
-     * @param permission the permission to check
-     * @return true is granted
-     */
-    private boolean isPermissionGranted(String permission) {
-        if (permission == null) {
-            throw new IllegalArgumentException("permission is null");
-        }
-
-        return context.checkPermission(permission, android.os.Process.myPid(), Process.myUid()) == PackageManager.PERMISSION_GRANTED;
     }
 }

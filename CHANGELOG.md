@@ -1,5 +1,40 @@
 Change Log
 ==========
+Version 1.17.2
+* Fixed log tags generation on builds with Proguard enabled (https://github.com/Polidea/RxAndroidBle/pull/814)
+
+Version 1.17.1
+* No changes over 1.17.0. Mistake release.
+
+Version 1.17.0
+* Changed RxBleConnection.GATT_MTU_MAXIMUM to 515 to fix Android 13, thanks @marsounjan! (https://github.com/Polidea/RxAndroidBle/pull/808)
+
+Version 1.16.0
+* Added `ScanSettingsBuilder#setLegacy` option, thanks @danielstuart14! (https://github.com/Polidea/RxAndroidBle/pull/801)
+
+Version 1.15.2
+* Fixed `RxBleDevice#toString` crashing when runtime permission BLUETOOTH_CONNECT is not granted on API 31 (Android 12) (https://github.com/Polidea/RxAndroidBle/pull/800)
+* Added granted permissions cache (https://github.com/Polidea/RxAndroidBle/pull/802)
+* Updated `RxBleClient#getBondedDevices` Javadoc for usage on API 31 (Android 12) (https://github.com/Polidea/RxAndroidBle/pull/804)
+
+Version 1.15.1
+* Fixed duplicate 'META-INF/com.google.dagger_dagger.version' file (regression) (https://github.com/Polidea/RxAndroidBle/pull/794)
+
+Version 1.15.0
+* No functional changes. First release of RxAndroidBle based on RxJava 3. RxJava 2 version is still supported. (https://github.com/Polidea/RxAndroidBle/pull/793)
+
+Version 1.14.1
+* Fixed duplicate 'META-INF/com.google.dagger_dagger.version' file (https://github.com/Polidea/RxAndroidBle/pull/790)
+
+Version 1.14.0
+* Added `RxBleClient#getConnectedPeripherals` for retrieving all BLE peripherals connected to the device, thanks @DaBs! (https://github.com/Polidea/RxAndroidBle/pull/765)
+* Updated URL for native GATT statuses in `BleGattException`, thanks @ariccio! (https://github.com/Polidea/RxAndroidBle/pull/779)
+* Added `BleScanResult#isConnectable` for getting info if the scanned peripheral is connectable, thanks @MartinSadovy! (https://github.com/Polidea/RxAndroidBle/pull/781)
+* Added helper functions `RxBleClient#isConnectRuntimePermissionGranted` and `RxBleClient#getRecommendedConnectRuntimePermissions` (https://github.com/Polidea/RxAndroidBle/pull/787)
+
+Version 1.13.1
+* Fixed 'BLUETOOTH_SCAN' permission entry in Android Manifest for apps that do not build using Android 12 target (https://github.com/Polidea/RxAndroidBle/pull/767)
+
 Version 1.13.0
 * **Changed behaviour** of `RxBleClient#getRecommendedScanRuntimePermissions` (https://github.com/Polidea/RxAndroidBle/pull/762)
 * Adjusted checks for scanning in regards to API 31 (Android 12) (https://github.com/Polidea/RxAndroidBle/pull/762)
